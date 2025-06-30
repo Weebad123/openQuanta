@@ -1,18 +1,16 @@
-import Image from "next/image";
-import ModeToggle from "@/components/shared/mode-toggle";
+import { Button } from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
 
 export default function Home() {
   return (
     <main className="font-sans">
-      <Image
-        className="dark:invert"
-        src="/next.svg"
-        alt="Next.js logo"
-        width={180}
-        height={38}
-        priority
-      />
-      <ModeToggle />
+      <section className="p-5 w-full max-w-[1280px] mx-auto">
+        <div>
+          <Button>
+            Road to DeSci Revolution <ChevronRight />
+          </Button>
+        </div>
+      </section>
     </main>
   );
 }
