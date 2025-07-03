@@ -20,7 +20,7 @@ export default function Header() {
   ];
 
   return (
-    <header>
+    <header className="fixed top-0 w-full">
       <div className="flex items-center justify-between gap-5 w-full max-w-[1280px] mx-auto">
         <Link href="/" id="logo" className="w-full max-w-[200px]">
           <Image src={logo} alt="OpenQuanta" className="w-full dark:invert" />
