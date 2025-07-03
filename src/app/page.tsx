@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { heroArt, heroDash } from "@/assets/images";
+import { heroArt, heroDash, smartFlow } from "@/assets/images";
 
 export default function Home() {
   return (
     <main className="font-sans">
+      {/* Hero Top */}
       <section className="p-5 w-full max-w-[1280px] mx-auto grid md:grid-cols-2 items-center">
         <div className="flex flex-col gap-10 items-start">
-          <Button variant="link">
+          <Button variant="link" className="text-primary">
             Road to DeSci Revolution <ChevronRight />
           </Button>
 
@@ -33,8 +34,33 @@ export default function Home() {
           <Image src={heroArt} alt="Hero Art" />
         </div>
       </section>
+
+      {/* Hero Bottom */}
       <section>
         <Image src={heroDash} alt="Hero Dashboard" />
+      </section>
+
+      {/* Partners */}
+      <section>
+        <h2 className="text-center">
+          Blockchain technology, DAOs and many other DeSci Platforms trust our
+          vision
+        </h2>
+
+        <div>{/* Array of partner logos */}</div>
+      </section>
+
+      {/* Feature: Smart Flow */}
+      <section>
+        <h2 className="text-center text-5xl">
+          Smart <span className="text-primary">Flow</span>
+        </h2>
+        <p className="text-center">
+          A seamless, step-by-step flow built to guide you from first click to
+          final result.
+        </p>
+
+        <Image src={smartFlow} alt="Smart Flow" />
       </section>
     </main>
   );
