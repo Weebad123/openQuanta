@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main className="font-sans">
       {/* Hero Top */}
-      <section className="p-5 w-full max-w-[1280px] mx-auto grid md:grid-cols-2 items-center">
-        <div className="flex flex-col gap-10 items-start">
+      <section className="w-full max-w-[1280px] mx-auto grid md:grid-cols-2 items-center">
+        <div className="px-5 py-20 flex flex-col gap-10 items-start">
           <Button variant="link" className="text-primary">
             Road to DeSci Revolution <ChevronRight />
           </Button>
@@ -23,7 +23,7 @@ export default function Home() {
           </div>
 
           <div>
-            <Button variant="ghost">Join Waitlist</Button>
+            <Button variant="outline">Join Waitlist</Button>
             <Button variant="link">
               Request a Demo <ChevronRight />
             </Button>

@@ -1,4 +1,4 @@
-import { AlignRight, Menu } from "lucide-react";
+import { AlignRight, ChevronRight, Menu } from "lucide-react";
 import logo from "@/assets/brand/logoWordBlack.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,8 +14,8 @@ import ModeToggle from "./mode-toggle";
 export default function Header() {
   const navLinks = [
     { href: "/discover", label: "Discover Research" },
-    { href: "/docs", label: "Docs" },
     { href: "/bounties", label: "Funding & Bounties" },
+    { href: "/docs", label: "Document" },
     { href: "/about", label: "About" },
   ];
 
@@ -27,8 +27,12 @@ export default function Header() {
         </Link>
 
         <div className="flex flex-row-reverse items-center justify-between w-full gap-5 p-5">
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-5">
             <ModeToggle />
+            <Button variant="link">
+              Request a Demo <ChevronRight />
+            </Button>
+            <Button variant="secondary">Join Waitlist</Button>
           </div>
 
           {/* Desktop Navigation */}
@@ -37,7 +41,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary transition-colors text-[12px]"
               >
                 {link.label}
               </Link>
@@ -64,9 +68,6 @@ export default function Header() {
                     </Link>
                   </DropdownMenuItem>
                 ))}
-                <div className="px-2 py-1.5">
-                  <ModeToggle className="w-full justify-end" variant="ghost" />
-                </div>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
