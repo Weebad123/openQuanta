@@ -1,5 +1,25 @@
 import heroArt from "./hero_art.png";
 import heroDash from "./hero_dashboard.png";
 import smartFlow from "./smart_flow_demo.png";
+import crossPlatform from "./cross_platform.png";
 
-export { heroArt, heroDash, smartFlow };
+export { heroArt, heroDash, smartFlow, crossPlatform };
+
+// partner brands
+import solana from "./solana.png";
+import pumpScience from "./pump_science.png";
+import baseDash from "./base_dash.png";
+import superteam from "./superteam.png";
+import mintlify from "./mintlify.png";
+import fey from "./fey.png";
+import bloomread from "./bloomread.png";
+
+export const brands = [
+  solana,
+  pumpScience,
+  baseDash,
+  superteam,
+  mintlify,
+  fey,
+  bloomread,
+];
