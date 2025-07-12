@@ -2,8 +2,9 @@ import heroArt from "./hero_art.png";
 import heroDash from "./hero_dashboard.png";
 import smartFlow from "./smart_flow_demo.png";
 import crossPlatform from "./cross_platform.png";
+import solanaCode from "./solana_code.png";
 
-export { heroArt, heroDash, smartFlow, crossPlatform };
+export { heroArt, heroDash, smartFlow, crossPlatform, solanaCode };
 
 // partner brands
 import solana from "./solana.png";

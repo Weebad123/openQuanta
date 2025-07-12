@@ -7,6 +7,7 @@ import {
   heroArt,
   heroDash,
   smartFlow,
+  solanaCode,
 } from "@/assets/images";
 
 export default function Home() {
@@ -119,7 +120,7 @@ export default function Home() {
 
           <div>
             {smartFlowFeatures.map((x) => (
-              <div>
+              <div key={x.title}>
                 <h5>{x.title}</h5>
                 <p>{x.desc}</p>
               </div>
@@ -137,6 +138,100 @@ export default function Home() {
             fill
             className="object-contain w-full"
           />
+        </div>
+
+        <div>
+          <p>One post. Every platform, All trustless.</p>
+          <h2>
+            OpenQuanta pairs you with your ideal audience fast and trustlessly
+          </h2>
+          <p>
+            With SocialFi on Solana, our platform integrates seamlessly with
+            your favorite social channels — like X and LinkedIn — automatically
+            sharing your research or DAO updates across platforms as soon as
+            they go live
+          </p>
+          <Button variant="link">
+            Become a founding contributor <ChevronRight />
+          </Button>
+        </div>
+      </section>
+
+      {/* Onchain Verification */}
+      <section className="w-full max-w-[1200px] mx-auto p-5 bg-[#1D1D20] rounded-2xl grid gap-5 md:grid-cols-2">
+        <div>
+          <h2>On-Chain Journal Verification</h2>
+          <h3>Immutable Proof on Solana Blockchain</h3>
+          <p>
+            Every research journal on OpenQuanta is securely recorded on the
+            Solana blockchain. This means your authorship, timestamp, and data
+            are cryptographically stored tamper-proof and transparent. When you
+            connect your wallet, our platform fetches your journal's on-chain
+            record in real-time, proving ownership and authenticity without any
+            centralized gatekeeper.
+          </p>
+        </div>
+        <div>
+          <Image src={solanaCode} alt="On-Chain Journal Verification" />
+        </div>
+      </section>
+
+      {/* Feedback and Testimonials */}
+      <section>
+        <h2 className="text-center text-5xl">
+          Meet DeSci &mdash;{" "}
+          <span className="text-primary">Real Feedbacks</span>
+        </h2>
+
+        <div>
+          <h3>Love from DeSci Builders</h3>
+
+          <p>
+            Each card below carries a unique voice from different vibrant
+            community — researchers, developers, dreamers, and doers — all
+            united by a deep love for open science. From labs to ledgers, this
+            is love from DeSci builders, to the world.
+          </p>
+
+          {/* Review carousel */}
+          <div></div>
+        </div>
+      </section>
+
+      {/* Featured research */}
+      <section>
+        <div>
+          <h2>Featured Research</h2>
+          <h3>Punchy research focus/title</h3>
+          <p>
+            Explore groundbreaking work from scientists, DAOs, All research is
+            peer-reviewed, minted on-chain, and shareable across your connected
+            socials through SocialFi.
+          </p>
+          <Button variant="link">
+            Explore Research <ChevronRight />
+          </Button>
+        </div>
+
+        {/* Research previews */}
+        <div></div>
+      </section>
+
+      <section>
+        {/* Search bar */}
+        <div>
+          <form>
+            <input type="text" name="search" id="search" />
+          </form>
+        </div>
+
+        <div>
+          <h2>Start Publishing on openQuanta</h2>
+          <p>
+            All you need is your research. We handle the rest from on-chain
+            proof to peer discovery.
+          </p>
+          <Button>Join Waitlist</Button>
         </div>
       </section>
     </main>
