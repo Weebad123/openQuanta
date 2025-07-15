@@ -86,7 +86,12 @@ export default function Home() {
         <div className="flex gap-5 items-center justify-center">
           {/* Array of partner logos */}
           {brands.map((brand) => (
-            <Image src={brand} alt="brand" height={20} />
+            <Image
+              key={brands.indexOf(brand)}
+              src={brand}
+              alt="brand"
+              height={20}
+            />
           ))}
         </div>
       </section>
